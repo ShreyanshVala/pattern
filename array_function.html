@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [11, 22, 30, 40];
+      document.write("<br>" + arr);
+      arr.push(55, 89, 90);
+      document.write("<br>", arr);
+      arr.pop();
+      document.write("<br>", arr);
+      arr.unshift(100, 200);
+      document.write("<br>" + arr);
+      arr.shift();
+      document.write("<br>" + arr);
+      //positionwise data add or remove
+      arr.splice(3, 0, 45, 56, 67);
+      document.write("<br>", arr);
+      arr.splice(4, 2);
+      document.write("<br>", arr);
+    </script>
+  </body>
+</html>

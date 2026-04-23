@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let no = 153;
+      let sum = 0;
+      let f = no;
+      while (no > 0) {
+        let r = no % 10; //562%10=2 56%10=6
+        no = Math.floor(no / 10); //562/10=56 56/10 =5 .6=5 5/10=0 .5=0
+        sum = sum + r ** 3;
+        //sum = sum+r
+      }
+      document.write("<br>No is", f);
+      document.write("<br>Sum is", sum);
+      if (f == sum) {
+        document.write("<br>It is ArmStrong Num");
+      } else {
+        document.write("<br>It is not armstrong no");
+      }
+    </script>
+  </body>
+</html>

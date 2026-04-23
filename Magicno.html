@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //sum=19 91
+      let sum = 19;
+      let rev = 0;
+      let s = sum;
+      while (sum > 0) {
+        r = sum % 10;
+        sum = Math.floor(sum / 10);
+        rev = rev * 10 + r;
+      }
+      document.write("<br>Sum of digits", s);
+      document.write("<br>Reverse", rev);
+      let m = s * rev;
+      document.write("<br>multiply is ", m);
+      if (f == m) {
+        document.write("<br>It is Magic No");
+      } else {
+        document.write("<br>It is Not Magic No");
+      }
+    </script>
+  </body>
+</html>
