@@ -6,6 +6,30 @@
     <title>Document</title>
   </head>
   <body>
-    <script></script>
+    <script>
+      let add = () => {
+        let a = 12;
+        let b = 2;
+        document.write("<br>Addition is :", a + b);
+      };
+
+      var area = (r) => {
+        const pi = 3.14;
+        document.write("<br>Area of circle is:", pi * r ** 2);
+      };
+
+      let one = 2;
+      let two = 22;
+      const multiply = () => {
+        //fat arrow function
+        return one * two;
+      };
+
+      let cube = (a) => a ** 3;
+      add();
+      area(2);
+      document.write("<br>Multiplication Is " + multiply());
+      document.write("<br>Cube is", cube(9));
+    </script>
   </body>
 </html>
