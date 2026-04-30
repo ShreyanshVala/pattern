@@ -7,12 +7,15 @@
   </head>
   <body>
     <script>
-      for (let i = 1; i <= 5; i++) {
-        for (let j = 1; j <= 5; j++) {
-          document.write("*");
+      let arr = [34, 45, 1, 23, 55, 6];
+      let ans = arr.reduce((max, curr) => {
+        if (curr > max) {
+          //45>34 1>45 23>45 55>45 6>55
+          max = curr;
         }
-        document.write("<br>");
-      }
+        return max;
+      });
+      document.write("<br>Max is " + ans);
     </script>
   </body>
 </html>
